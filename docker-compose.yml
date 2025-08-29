@@ -1,0 +1,34 @@
+services:
+  datacom-backup:
+    build: .
+    container_name: datacom-backup
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+      - ./config:/app/config
+    networks:
+      - backup-network
+    healthcheck:
+      test: ["CMD", "python", "src/datacom_backup.py", "--help"]
+      interval: 5h
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  backup-network:
+    driver: bridge
+
+volumes:
+  backup-data:
+    driver: local
+  log-data:
+    driver: local

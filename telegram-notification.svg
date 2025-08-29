@@ -1,0 +1,86 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="telegramGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2AABEE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229ED9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa" rx="10"/>
+  
+  <!-- Phone mockup -->
+  <rect x="50" y="30" width="180" height="320" rx="20" fill="url(#phoneGradient)" stroke="#dee2e6" stroke-width="2" transform="scale(0.8)"/>
+  <rect x="60" y="50" width="160" height="280" rx="10" fill="#000" transform="scale(0.8)"/>
+  
+  <!-- Telegram header -->
+  <rect x="60" y="50" width="160" height="40" rx="10" fill="url(#telegramGradient)" transform="scale(0.8)"/>
+  
+  <!-- Telegram icon -->
+  <circle cx="80" cy="70" r="8" fill="white" transform="scale(0.8)"/>
+  <path d="M 76 66 L 84 70 L 76 74 Z" fill="url(#telegramGradient)" transform="scale(0.8)"/>
+  
+  <!-- Header text -->
+  <text x="100" y="75" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold" transform="scale(0.8)">Backup Datacom</text>
+  
+  <!-- Message bubble -->
+  <rect x="70" y="100" width="140" height="80" rx="8" fill="#DCF8C6" transform="scale(0.8)"/>
+  
+  <!-- Success icon -->
+  <circle cx="85" cy="115" r="6" fill="#25D366" transform="scale(0.8)"/>
+  <path d="M 82 115 L 84 117 L 88 113" stroke="white" stroke-width="2" fill="none" transform="scale(0.8)"/>
+  
+  <!-- Message text -->
+  <text x="100" y="118" fill="#075E54" font-family="Arial, sans-serif" font-size="10" font-weight="bold" transform="scale(0.8)">✅ Backup - Sucesso</text>
+  <text x="75" y="135" fill="#075E54" font-family="Arial, sans-serif" font-size="8" transform="scale(0.8)">📊 Resumo:</text>
+  <text x="75" y="148" fill="#075E54" font-family="Arial, sans-serif" font-size="8" transform="scale(0.8)">• Sucessos: 3</text>
+  <text x="75" y="161" fill="#075E54" font-family="Arial, sans-serif" font-size="8" transform="scale(0.8)">• Falhas: 0</text>
+  <text x="75" y="174" fill="#075E54" font-family="Arial, sans-serif" font-size="8" transform="scale(0.8)">• Duração: 0:02:15</text>
+  
+  <!-- Time stamp -->
+  <text x="180" y="175" fill="#999" font-family="Arial, sans-serif" font-size="7" text-anchor="end" transform="scale(0.8)">14:30</text>
+  
+  <!-- Datacom logo area -->
+  <rect x="220" y="50" width="150" height="100" rx="10" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- Datacom text -->
+  <text x="295" y="80" fill="#0066cc" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">DATACOM</text>
+  <text x="295" y="100" fill="#666" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Backup System</text>
+  
+  <!-- Network devices icons -->
+  <g transform="translate(230, 110)">
+    <!-- Switch -->
+    <rect x="0" y="0" width="30" height="15" rx="2" fill="#4CAF50" stroke="#388E3C" stroke-width="1"/>
+    <circle cx="5" cy="7.5" r="1.5" fill="#fff"/>
+    <circle cx="15" cy="7.5" r="1.5" fill="#fff"/>
+    <circle cx="25" cy="7.5" r="1.5" fill="#fff"/>
+    <text x="15" y="25" fill="#666" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Switch</text>
+    
+    <!-- Router -->
+    <rect x="50" y="0" width="30" height="15" rx="2" fill="#2196F3" stroke="#1976D2" stroke-width="1"/>
+    <rect x="55" y="3" width="20" height="9" rx="1" fill="#fff"/>
+    <circle cx="60" cy="7.5" r="1" fill="#2196F3"/>
+    <circle cx="70" cy="7.5" r="1" fill="#2196F3"/>
+    <text x="65" y="25" fill="#666" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Router</text>
+    
+    <!-- Access Point -->
+    <rect x="100" y="0" width="30" height="15" rx="2" fill="#FF9800" stroke="#F57C00" stroke-width="1"/>
+    <circle cx="115" cy="7.5" r="3" fill="#fff"/>
+    <path d="M 112 7.5 A 3 3 0 0 1 118 7.5" stroke="#FF9800" stroke-width="1" fill="none"/>
+    <text x="115" y="25" fill="#666" font-family="Arial, sans-serif" font-size="8" text-anchor="middle">Access</text>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M 180 140 Q 200 140 220 120" stroke="#ddd" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+  
+  <!-- Status indicators -->
+  <circle cx="350" cy="180" r="4" fill="#25D366"/>
+  <text x="360" y="185" fill="#25D366" font-family="Arial, sans-serif" font-size="10">Online</text>
+  
+  <!-- Footer text -->
+  <text x="200" y="280" fill="#666" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Sistema de Backup Automatizado</text>
+</svg>

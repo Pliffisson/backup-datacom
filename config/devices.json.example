@@ -1,0 +1,67 @@
+{
+  "devices": [
+    {
+      "name": "datacom-switch-core-matriz",
+      "host": "192.168.1.10",
+      "port": 22,
+      "username": "admin",
+      "password": "sua_senha_segura",
+      "description": "Switch Core Datacom DM4100 - Matriz Principal",
+      "timeout": 30
+    },
+    {
+      "name": "datacom-router-wan-matriz",
+      "host": "192.168.1.1",
+      "port": 22,
+      "username": "admin",
+      "password": "sua_senha_segura",
+      "description": "Roteador Datacom DM991 - Gateway WAN Matriz",
+      "timeout": 45
+    },
+    {
+      "name": "datacom-switch-acesso-andar1",
+      "host": "192.168.1.20",
+      "port": 22,
+      "username": "backup-user",
+      "password": "outra_senha_segura",
+      "description": "Switch de Acesso Datacom DM2100 - Andar 1",
+      "timeout": 30
+    },
+    {
+      "name": "datacom-switch-acesso-andar2",
+      "host": "192.168.1.21",
+      "port": 22,
+      "username": "backup-user",
+      "password": "outra_senha_segura",
+      "description": "Switch de Acesso Datacom DM2100 - Andar 2",
+      "timeout": 30
+    },
+    {
+      "name": "datacom-router-filial-01",
+      "host": "10.0.1.1",
+      "port": 2222,
+      "username": "admin",
+      "password": "senha_filial_01",
+      "description": "Roteador Datacom DM705 - Filial 01",
+      "timeout": 60
+    },
+    {
+      "name": "datacom-switch-filial-01",
+      "host": "10.0.1.10",
+      "port": 22,
+      "username": "admin",
+      "password": "senha_filial_01",
+      "description": "Switch Datacom DM2100 - Filial 01",
+      "timeout": 30
+    },
+    {
+      "name": "datacom-router-filial-02",
+      "host": "10.0.2.1",
+      "port": 22,
+      "username": "admin",
+      "password": "senha_filial_02",
+      "description": "Roteador Datacom DM705 - Filial 02",
+      "timeout": 45
+    }
+  ]
+}
